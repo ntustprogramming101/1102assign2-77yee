@@ -171,7 +171,6 @@ void draw() {
         groundhogX-=80.0/15;
         leftCounter-=1;
         image(ghlImg,round(groundhogX),round(groundhogY));
-        println(downCounter);
         
         }
      else if(rightCounter>0){
