@@ -189,9 +189,11 @@ void draw() {
       switch(ghState) {
       case GH_LEFT:
         ghX-=ghSpeed/15.0;
+        image(gh, -100, -100);
         break;
       case GH_RIGHT:
         ghX+=ghSpeed/15.0;
+        image(gh, -100, -100);
         break;
       case GH_DOWN:
         ghY+=ghSpeed/15.0;
@@ -210,9 +212,11 @@ void draw() {
       break;
     case GH_LEFT:
       image(ghLeft, ghX, ghY);
+      image(gh, -100, -100);
       break;
     case GH_RIGHT:
       image(ghRight, ghX, ghY);
+      image(gh, -100, -100);
       break;
     case GH_UP:
       image(ghDown, ghX, ghY);
@@ -274,12 +278,15 @@ void keyPressed() {
       break;
     case DOWN:
       ghState=GH_DOWN;
+      image(gh, -100, -100);
       break;
     case RIGHT:
       ghState=GH_RIGHT;
+      image(gh, -100, -100);
       break;
     case LEFT:
       ghState=GH_LEFT;
+      image(gh, -100, -100);
       break;
     }
   }
@@ -293,12 +300,15 @@ void keyReleased() {
       break;
     case DOWN:
       downPressed = false ;
+      image(gh, -100, -100);
       break;
     case RIGHT:
       rightPressed = false ;
+      image(gh, -100, -100);
       break;
     case LEFT:
       leftPressed = false ;
+      image(gh, -100, -100);
       break;
     }
   }
